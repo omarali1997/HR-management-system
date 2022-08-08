@@ -3,25 +3,24 @@ function salaryemp(x){
   if(x == "senior")
   {
     var fullsalary = Math.floor(Math.random() * (2000 - 1500)) + 1500;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
+    
     return net;
   }
   else if(x == "mid-senior")
   {
     var fullsalary = Math.floor(Math.random() * (1500 - 1000)) + 1000;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
     return net;
   }
   else(x == "junior")
   {
     var fullsalary = Math.floor(Math.random() * (1000 - 500)) + 500;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
     return net;
   }
 
-
 }
-
 
 
 
@@ -87,6 +86,7 @@ Employee.prototype.render = function () {
 
   body[0].style.backgroundColor = "red";
 };
+
 
 
 
