@@ -81,6 +81,13 @@
     -webkit-filter: blur(8px);
     height: 100%; */
   }
+  body img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  
   
   table, th, td {
     border: 1px solid black;
@@ -126,3 +133,5 @@
     /* display: block;
     background-color: #101010; */
   }
+
+  
