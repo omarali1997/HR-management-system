@@ -1,9 +1,30 @@
+var net =0;
+function salaryemp(x){
+  if(x == "senior")
+  {
+    var fullsalary = Math.floor(Math.random() * (2000 - 1500)) + 1500;
+    var net = fullsalary - (fullsalary*0.075);
+    return net;
+  }
+  else if(x == "mid-senior")
+  {
+    var fullsalary = Math.floor(Math.random() * (1500 - 1000)) + 1000;
+    var net = fullsalary - (fullsalary*0.075);
+    return net;
+  }
+  else(x == "junior")
+  {
+    var fullsalary = Math.floor(Math.random() * (1000 - 500)) + 500;
+    var net = fullsalary - (fullsalary*0.075);
+    return net;
+  }
 
 
-function salaryemp(max, min) {
-
-  return Math.floor(Math.random() * (max - min)) + min;
 }
+
+
+
+
 
 var id = 999 ;
 function uniqeId(){
