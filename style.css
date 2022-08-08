@@ -82,10 +82,20 @@
     height: 100%; */
   }
   body img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    /* padding-left: 50px; */
+    border: solid;
+    /* background-color: rgb(32, 111, 32); */
+    
+    
   }
+  
 
+  body p{
+    text-align: left;
+    
+  }
 
   
   
@@ -117,6 +127,7 @@
   
   main{
     padding-top: 50px;
+    
   
   }
   footer{
@@ -133,5 +144,15 @@
     /* display: block;
     background-color: #101010; */
   }
+  
+  
+ 
+  
 
+  
+
+
+
+
+  
   
