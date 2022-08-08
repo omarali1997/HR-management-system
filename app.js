@@ -3,25 +3,24 @@ function salaryemp(x){
   if(x == "senior")
   {
     var fullsalary = Math.floor(Math.random() * (2000 - 1500)) + 1500;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
+    
     return net;
   }
   else if(x == "mid-senior")
   {
     var fullsalary = Math.floor(Math.random() * (1500 - 1000)) + 1000;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
     return net;
   }
   else(x == "junior")
   {
     var fullsalary = Math.floor(Math.random() * (1000 - 500)) + 500;
-    var net = fullsalary - (fullsalary*0.075);
+    var net = fullsalary - (fullsalary*0.075).toFixed(0);
     return net;
   }
 
-
 }
-
 
 
 
@@ -65,13 +64,13 @@ Employee.prototype.render = function () {
 };
 
 
-const employee1 = new Employee(uniqeId(), "Ghazi samer", "Administration", "Senior", salaryemp(1500, 2000));
-const employee2 = new Employee(uniqeId(), "Lana Ali", "Finance", "Senior", salaryemp(1500, 2000));
-const employee3 = new Employee(uniqeId(), "Tamara Ayoub", "Marketing", "Senior", salaryemp(1500, 2000));
-const employee4 = new Employee(uniqeId(), "Safi Walid", "Administration", "Mid-Senior", salaryemp(1000, 1500));
-const employee5 = new Employee(uniqeId(), "Omar Zaid", "Development", "Senior", salaryemp(1500, 2000));
-const employee6 = new Employee(uniqeId(), "Rana Saleh", "Development", "Junior", salaryemp(500, 1000));
-const employee7 = new Employee(uniqeId(), "Hadi Ahmad", "Finance", "Mid-Senior", salaryemp(1000, 1500));
+const employee1 = new Employee(uniqeId(), "Ghazi samer", "Administration", "Senior", salaryemp());
+const employee2 = new Employee(uniqeId(), "Lana Ali", "Finance", "Senior", salaryemp());
+const employee3 = new Employee(uniqeId(), "Tamara Ayoub", "Marketing", "Senior", salaryemp());
+const employee4 = new Employee(uniqeId(), "Safi Walid", "Administration", "Mid-Senior", salaryemp());
+const employee5 = new Employee(uniqeId(), "Omar Zaid", "Development", "Senior", salaryemp());
+const employee6 = new Employee(uniqeId(), "Rana Saleh", "Development", "Junior", salaryemp());
+const employee7 = new Employee(uniqeId(), "Hadi Ahmad", "Finance", "Mid-Senior", salaryemp());
 
 
 
