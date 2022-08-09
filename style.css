@@ -39,7 +39,7 @@
   
   }
   
-  .logo_ h1 {
+  .logo_ h1 span{
     font-weight: 800;
   
   }
@@ -85,14 +85,14 @@
     width: 150px;
     height: 150px;
     /* padding-left: 50px; */
-    border: solid;
+    /* border: solid; */
     /* background-color: rgb(32, 111, 32); */
     
     
   }
   
 
-  body p{
+  body p span{
     text-align: left;
     
   }
@@ -145,9 +145,9 @@
     background-color: #101010; */
   }
   
-  body span{
-    /* display:inline-block; */
-    /* padding-left: 200px; */
+  body main div{
+    display:inline-block;
+    padding-left: 200px;
     /* padding: 5%; */
     padding-right: -20%;
     border: solid;
