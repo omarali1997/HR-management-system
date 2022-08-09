@@ -39,7 +39,7 @@
   
   }
   
-  .logo_ h1 span {
+  .logo_ h1 {
     font-weight: 800;
   
   }
@@ -145,6 +145,15 @@
     background-color: #101010; */
   }
   
+  body span{
+    /* display:inline-block; */
+    /* padding-left: 200px; */
+    /* padding: 5%; */
+    padding-right: -20%;
+    border: solid;
+    
+  }
+
   
  
   
