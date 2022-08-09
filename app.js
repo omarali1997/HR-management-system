@@ -41,7 +41,7 @@ function Employee(empIdValue, nameValue, deptValue, levelValue, salaryValue, ima
   allEmployee.push(this);
 }
 
-var divE=document.getElementsByTagName("div");
+var divE=document.getElementsByTagName("span");
 
 Employee.prototype.render = function (index) {
   // document.write('<br>');
@@ -54,15 +54,15 @@ Employee.prototype.render = function (index) {
   // document.write(this.salary);
   // document.write('<br>');
 
-  // const divEl = document.getElementsByClassName("omarClass");
-  // console.log(divEl);
+  // const divE = document.getElementsByClassName("divs");
+  // console.log(divE);
   
   const imgEl = document.createElement('img');
   imgEl.src=this.image;
   imgEl.alt=this.Name;
   body[0].appendChild(imgEl); 
-
-
+  // divE[index].textContent = this.image ;
+  
 
   const NIEl = document.createElement("p"); //name,Id element
   NIEl.textContent = ` Name : ${this.Name} - ID: ${this.EmpId}   `;
@@ -70,9 +70,10 @@ Employee.prototype.render = function (index) {
   
 
   const DLEl = document.createElement("p"); //Dept , Level element
-  DLEl.textContent = `Department : ${this.Dept} - Level:${this.level} `;
+  DLEl.textContent = `Department : ${this.Dept} - Level:${this.Level} `;
   body[0].appendChild(DLEl);
 
+  
   const SEl = document.createElement("p"); //salary element
   SEl.textContent = `${this.salary}  `;
   body[0].appendChild(SEl);
