@@ -41,7 +41,6 @@ function Employee(empIdValue, nameValue, deptValue, levelValue, salaryValue, ima
   allEmployee.push(this);
 }
 
-// var divE=document.getElementsByTagName("span");
 
 Employee.prototype.render = function () {
   // document.write('<br>');
@@ -101,7 +100,6 @@ Employee.prototype.render = function () {
 
   
 
-  // body[0].style.backgroundColor = "red";
 };
 
 
