@@ -103,7 +103,6 @@ Employee.prototype.render = function () {
 };
 
 
-
 const employee1 = new Employee(uniqeId(), "Ghazi samer" , "Administration", "Senior"    , salaryemp(), "./img/Ghazi.jpg"  );
 const employee2 = new Employee(uniqeId(), "Lana Ali"    , "Finance"       , "Senior"    , salaryemp(), "./img/Lana.jpg"   );
 const employee3 = new Employee(uniqeId(), "Tamara Ayoub", "Marketing"     , "Senior"    , salaryemp(), "./img/Tamara.jpg" );
