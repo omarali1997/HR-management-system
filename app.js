@@ -84,6 +84,14 @@ Employee.prototype.render = function (index) {
 };
 
 
+const employee1 = new Employee(uniqeId(), "Ghazi samer" , "Administration", "Senior"    , salaryemp(), "./img/Ghazi.jpg"  );
+const employee2 = new Employee(uniqeId(), "Lana Ali"    , "Finance"       , "Senior"    , salaryemp(), "./img/Lana.jpg"   );
+const employee3 = new Employee(uniqeId(), "Tamara Ayoub", "Marketing"     , "Senior"    , salaryemp(), "./img/Tamara.jpg" );
+const employee4 = new Employee(uniqeId(), "Safi Walid"  , "Administration", "Mid-Senior", salaryemp(), "./img/Safi.jpg"   );
+const employee5 = new Employee(uniqeId(), "Omar Zaid"   , "Development"   , "Senior"    , salaryemp(), "./img/Omar.jpg"   );
+const employee6 = new Employee(uniqeId(), "Rana Saleh"  , "Development"   , "Junior"    , salaryemp(), "./img/Rana.jpg"   );
+const employee7 = new Employee(uniqeId(), "Hadi Ahmad"  , "Finance"       , "Mid-Senior", salaryemp(), "./img/Hadi.jpg"   );
+
 
 
 
