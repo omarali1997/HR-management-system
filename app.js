@@ -19,6 +19,7 @@ function salaryemp(x){
     var net = fullsalary - (fullsalary*0.075).toFixed(0);
     return net;
   }
+}
 
 
 var id = 999 ;
@@ -97,3 +98,4 @@ employee5.render(5);
 employee6.render(6);
 employee7.render(7);
 console.log(allEmployee);
+
